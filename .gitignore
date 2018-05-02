@@ -2,3 +2,5 @@ certreqs/*
 certs/*
 newcerts/*
 private/*
+.idea
+.gitignore
