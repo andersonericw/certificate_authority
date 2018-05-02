@@ -1,13 +1,12 @@
 #!/usr/bin/ruby
-require '../lib/certificate'
-require '../lib/certificate_helper'
+require File.join(Dir.pwd, 'data/env.rb')
+require File.join(ENV['lib_path'],'certificate_helper.rb')
+require File.join(ENV['lib_path'],'certificate.rb')
 
 if ARGV.size < 1
   puts 'The name of the certificate to sign is required'
   exit 1
 end
-
-require '../data/env.rb'
 
 if File.exist? File.join(ENV['certreq_path'], ARGV[0])
   key = Api::Certificate_Helper.load_key(ENV['certreq_path'], ARGV[0])

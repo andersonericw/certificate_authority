@@ -1,5 +1,5 @@
-require 'Openssl'
-require "C:/Users/ewander/Documents/projects/certificate_authority/lib/certificate_helper.rb"
+require 'openssl'
+require File.join(ENV['lib_path'], 'certificate_helper.rb')
 module Api
   class Certificate
     def self.generate_ca(cypher = 2048, ca_key = 'ca-key.pem', ca_cert = 'ca-crt.pem', name, valid_years)

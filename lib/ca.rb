@@ -3,9 +3,9 @@ require 'webrick'
 require 'webrick/https'
 require 'openssl'
 require 'json'
-require './certificate_helper.rb'
-require './certificate.rb'
-require './../data/env.rb'
+require File.join(Dir.pwd, 'data/env.rb')
+require File.join(ENV['lib_path'],'certificate_helper.rb')
+require File.join(ENV['lib_path'],'certificate.rb')
 
 module Api
 
@@ -15,6 +15,7 @@ module Api
       key = request.body.string
       Api::Certificate_Helper.generate_csr(params['hostname'], key)
       if ENV['autosign'] == '1'
+        puts 'autosign on'
         cn = params['hostname']
         key = Api::Certificate_Helper.load_key(ENV['certreq_path'], cn)
         formatted_name = "CN=" + cn.gsub(".", "/DC=")
@@ -42,6 +43,7 @@ module Api
       cn = params['hostname']
       content_type 'text/plain'
       cert = Api::Certificate_Helper.get_certificate(cn)
+      puts cn
       if cert.is_a? OpenSSL::X509::Certificate
         status = 200
         body cert.to_s
@@ -51,14 +53,10 @@ module Api
     end
   end
 
-  ENV['data_dir'] = "C:/Users/ewander/Documents/projects/certificate_authority/data"
-  ENV['key_path'] = "C:/Users/ewander/Documents/projects/certificate_authority/private"
-  ENV['cert_path'] = "C:/Users/ewander/Documents/projects/certificate_authority/certs"
-  ENV['certreq_path'] = "C:/Users/ewander/Documents/projects/certificate_authority/certreqs"
   ENV['RACK_ENV'] = "production"
-
   CERT_PATH = ENV['cert_path']
   KEY_PATH = ENV['key_path']
+
   webrick_options = {
       :Port               => 8443,
       :Logger             => WEBrick::Log::new($stderr, WEBrick::Log::DEBUG),

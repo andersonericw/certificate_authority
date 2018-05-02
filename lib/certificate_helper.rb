@@ -16,8 +16,9 @@ module Api
     def self.get_certificate directory = nil, name
       certificate_directory = directory != nil ? directory : ENV['cert_path']
       certificate = nil
-      puts File.join(certificate_directory, name)
+      puts 'certreq ' + File.join(certificate_directory, name)
       if File.exist? File.join(certificate_directory, name)
+        puts 'file found'
         raw_file = File.read File.join(certificate_directory, name)
         certificate = OpenSSL::X509::Certificate.new raw_file
       end

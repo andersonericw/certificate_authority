@@ -1,10 +1,7 @@
-require "C:/Users/ewander/Documents/projects/certificate_authority/lib/certificate.rb"
-require "C:/Users/ewander/Documents/projects/certificate_authority/lib/certificate_helper.rb"
-
 # Environment Variables
-ENV['data_dir'] = "C:/Users/ewander/Documents/projects/certificate_authority/data"
-ENV['cert_path'] = "C:/Users/ewander/Documents/projects/certificate_authority/certs"
-ENV['private_dir'] = "C:/Users/ewander/Documents/projects/certificate_authority/private"
+require File.join(Dir.pwd, 'data/env.rb')
+require File.join(ENV['lib_path'],'certificate_helper.rb')
+require File.join(ENV['lib_path'],'certificate.rb')
 def cert
 
   Api::Certificate.generate_ca("/DC=org/DC=ruby-lang/CN=localhost", 2)
