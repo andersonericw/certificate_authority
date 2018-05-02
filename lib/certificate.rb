@@ -56,5 +56,10 @@ module Api
       end
       new_serial
     end
+
+    def self.verify(ca, certificate)
+      return ca.issuer == certificate.issuer
+    end
+
   end
 end
