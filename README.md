@@ -1,10 +1,14 @@
-# Project Title
+# Certificate Authority
 
-One Paragraph of project description goes here
+This is an API based Certificate Authority that can be used for creating, signing, rejecting, and managing certificates
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+git clone https://github.com/andersonericw/certificate_authority.git
+cd certificate_authority/bin
+ruby setup.rb /path/to/certificate/root/directory
+cd /path/to/certificate/root/directory
+ruby certificate_http.rb
 
 ### Prerequisites
 
