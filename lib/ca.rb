@@ -3,33 +3,61 @@ require 'webrick'
 require 'webrick/https'
 require 'openssl'
 require 'json'
+require './certificate_helper.rb'
+require './certificate.rb'
+require './../data/env.rb'
 
 module Api
 
   class Server < Sinatra::Base
 
-    post '/' do
-      #content_type 'application/json'
-      #request.body.rewind
-      #contents = request.params
-      #puts contents.inspect
-      #puts contents['file'][:tempfile].read
-      File.exist? 'C:/Users/ewander/Documents/projects/certificate_authority/cert/ca-crt.pem'
-      file_content = File.read("#{Dir.pwd}/../data/ca-crt.pem")
-      request.body.rewind
-      json = {
-          "key:" => "val"
-      }
-      status 200
-      #body file.to_s
-      body file_content
+    post '/api/v1/certificate/request/:hostname' do
+      key = request.body.string
+      Api::Certificate_Helper.generate_csr(params['hostname'], key)
+      if ENV['autosign'] == '1'
+        cn = params['hostname']
+        key = Api::Certificate_Helper.load_key(ENV['certreq_path'], cn)
+        formatted_name = "CN=" + cn.gsub(".", "/DC=")
+        certificate = Api::Certificate.generate_certificate(key, formatted_name, 2)
+        Api::Certificate_Helper.write_certificate(cn, certificate)
+        Api::Certificate_Helper.remove_csr(cn)
+
+
+        content_type 'text/plain'
+        cert = Api::Certificate_Helper.get_certificate(cn)
+        if cert.is_a? OpenSSL::X509::Certificate
+          status = 200
+          body cert.to_s
+        else
+          status = 404
+        end
+      else
+        status = 200
+        body "Autosign is disabled... check back and see if signed."
+      end
     end
 
+    get '/api/v1/certificate/request/:hostname' do
+      #request.body.rewind
+      cn = params['hostname']
+      content_type 'text/plain'
+      cert = Api::Certificate_Helper.get_certificate(cn)
+      if cert.is_a? OpenSSL::X509::Certificate
+        status = 200
+        body cert.to_s
+      else
+        status = 404
+      end
+    end
   end
+
   ENV['data_dir'] = "C:/Users/ewander/Documents/projects/certificate_authority/data"
   ENV['key_path'] = "C:/Users/ewander/Documents/projects/certificate_authority/private"
+  ENV['cert_path'] = "C:/Users/ewander/Documents/projects/certificate_authority/certs"
+  ENV['certreq_path'] = "C:/Users/ewander/Documents/projects/certificate_authority/certreqs"
   ENV['RACK_ENV'] = "production"
-  CERT_PATH = ENV['data_dir']
+
+  CERT_PATH = ENV['cert_path']
   KEY_PATH = ENV['key_path']
   webrick_options = {
       :Port               => 8443,

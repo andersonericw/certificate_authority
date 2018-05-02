@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="327d46cc-0fa2-4981-9a80-1e9cb8cff904" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/cert.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/env.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/certs/ca-crt.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/certs/server-crt.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ca-crt.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ca-key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/server-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Certificate_Helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Certificate_Helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ca.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ca.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/certificate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/certificate.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/private/ca-key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/private/server-key.pem" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,19 +16,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/certificate_authority@api.rcov" NAME="api Coverage Results" MODIFIED="1525203379225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="certificate_athority" />
+    <SUITE FILE_PATH="coverage/certificate_authority@api.rcov" NAME="api Coverage Results" MODIFIED="1525275415359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="certificate_athority" />
     <SUITE FILE_PATH="coverage/certificate_athority@All_tests_in_certificate_athority__certificate_athority.rcov" NAME="All tests in certificate_athority: certificate_athority Coverage Results" MODIFIED="1524913670253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="certificate_athority" />
+    <SUITE FILE_PATH="coverage/certificate_authority@certsign.rcov" NAME="certsign Coverage Results" MODIFIED="1525273874360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="certificate_athority" />
     <SUITE FILE_PATH="coverage/certificate_authority@test.rcov" NAME="test Coverage Results" MODIFIED="1525261241975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="certificate_athority" />
     <SUITE FILE_PATH="coverage/certificate_athority@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1525060329863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="certificate_athority" />
     <SUITE FILE_PATH="coverage/certificate_athority@Test_rb.rcov" NAME="Test.rb Coverage Results" MODIFIED="1525146228579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="certificate_athority" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ca.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ca.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/ca.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="176">
+              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -43,8 +37,8 @@
       <file leaf-file-name="certificate.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/certificate.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="57" column="7" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+            <state relative-caret-position="186">
+              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -52,17 +46,35 @@
       <file leaf-file-name="certificate_helper.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/certificate_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="484">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="env.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/env.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cert.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/cert.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="16" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state relative-caret-position="580">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -72,7 +84,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>puts</find>
+      <find>dir</find>
     </findStrings>
+    <replaceStrings>
+      <replace>path</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,10 +101,13 @@
         <option value="$PROJECT_DIR$/lib/File_Manager.rb" />
         <option value="$PROJECT_DIR$/lib/Certiicate_Helper.rb" />
         <option value="$PROJECT_DIR$/lib/Certificate_Helper.rb" />
-        <option value="$PROJECT_DIR$/lib/certificate_helper.rb" />
-        <option value="$PROJECT_DIR$/lib/ca.rb" />
         <option value="$PROJECT_DIR$/lib/certificate.rb" />
         <option value="$PROJECT_DIR$/lib/test.rb" />
+        <option value="$PROJECT_DIR$/data/path.rb" />
+        <option value="$PROJECT_DIR$/bin/cert.rb" />
+        <option value="$PROJECT_DIR$/lib/certificate_helper.rb" />
+        <option value="$PROJECT_DIR$/lib/ca.rb" />
+        <option value="$PROJECT_DIR$/data/env.rb" />
       </list>
     </option>
   </component>
@@ -125,7 +144,17 @@
             <path>
               <item name="certificate_authority" type="b2602c69:ProjectViewProjectNode" />
               <item name="certificate_authority" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certificate_authority" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certificate_authority" type="462c0819:PsiDirectoryNode" />
               <item name="certs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certificate_authority" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certificate_authority" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="certificate_authority" type="b2602c69:ProjectViewProjectNode" />
@@ -148,7 +177,7 @@
     <property name="RunAnythingHistoryKey" value="ca.rb&#9;null&#9;null" />
     <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ca.rb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/cert.rb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -175,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.test">
+  <component name="RunManager" selected="Ruby.api">
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="certificate_athority" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -202,6 +231,19 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/ca.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
+    <configuration name="certsign" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="certificate_athority" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="ruby-2.4.2-p198" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/cert.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="suvcapiappqa001.homeoffice.anfcorp.com" />
+    </configuration>
     <configuration name="test" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="certificate_athority" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -218,6 +260,7 @@
     <list>
       <item itemvalue="Ruby.test" />
       <item itemvalue="Ruby.api" />
+      <item itemvalue="Ruby.certsign" />
     </list>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
@@ -234,7 +277,7 @@
       <workItem from="1524864117370" duration="379000" />
       <workItem from="1524864641820" duration="28717000" />
       <workItem from="1525174649624" duration="10865000" />
-      <workItem from="1525260900220" duration="453000" />
+      <workItem from="1525260900220" duration="12751000" />
     </task>
     <servers />
   </component>
@@ -271,22 +314,23 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40414000" />
+    <option name="totallyTimeSpent" value="52712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49803922" visible="true" weight="0.18869048" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.34394905" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5011905" side_tool="true" weight="0.37061402" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.37061402" />
-      <window_info id="Structure" order="1" sideWeight="0.5019608" side_tool="true" weight="0.18875" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49880952" visible="true" weight="0.30592105" />
       <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49803922" visible="true" weight="0.18869048" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info id="Structure" order="1" sideWeight="0.5019608" side_tool="true" weight="0.18875" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -295,7 +339,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -397,36 +440,106 @@
     <entry file="file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/openssl/x509.rb" />
     <entry file="file://$PROJECT_DIR$/lib/tester.rb" />
     <entry file="file://$PROJECT_DIR$/certs/server-crt.pem">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/certs/ca-crt.pem">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ca.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/certs/hostname">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/certificate.rb">
+    <entry file="file://C:/Ruby24-x64/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="57" column="7" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/certificate_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="202">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="580">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby24-x64/lib/ruby/2.4.0/webrick/httpserver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby24-x64/lib/ruby/2.4.0/webrick/server.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rack-1.6.10/lib/rack/handler/webrick.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/server-key.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="16" lean-forward="true" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/certreqs/suvcapiappqa001.homeoffice.anfcorp.com">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/certs/suvcapiappqa001.homeoffice.anfcorp.com">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/certificate_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/cert.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/env.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/certificate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ca.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
