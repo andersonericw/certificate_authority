@@ -40,3 +40,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Ruby Openssl documentation
 * Circle Engineering (https://engineering.circle.com/https-authorized-certs-with-node-js-315e548354a2) 
+
+Gist article about SSL & Trust
+https://gist.github.com/andersonericw/69d4a934e02dc0a197db0f071bbfa750
