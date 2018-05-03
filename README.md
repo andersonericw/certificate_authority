@@ -13,10 +13,15 @@ ruby certificate_http.rb
 
 ### Prerequisites
 ```
-ruby 2.0
+ruby 2.3.0
 RedHat 7
 SLES 12
 Oracle Linux 7
+
+gems 
+openssl 2.1.0
+sinatra 2.0.1
+json 1.8.3
 ```
 
 ### Installing
@@ -33,6 +38,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Ruby Openssl documentation
+* Circle Engineering (https://engineering.circle.com/https-authorized-certs-with-node-js-315e548354a2) 
